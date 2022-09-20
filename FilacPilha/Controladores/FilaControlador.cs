@@ -9,7 +9,7 @@ namespace filaCircular.Controladores
 {
     public class FilaControlador : IFilaServico
     {
-        private PilhaControlador pilha = new PilhaControlador();
+        public PilhaControlador pilha = new PilhaControlador();
         private PilhaControlador pilhaInvertida = new PilhaControlador();
         //private int[] elementos;
         public FilaControlador()
@@ -35,13 +35,21 @@ namespace filaCircular.Controladores
             return (pilha.vazio()) && (pilhaInvertida.vazio());
         }
 
-        public int?[] mostrar()
+        public List<int> mostrar()
         {
-            int?[] lista = pilha.mostrar();
-            int?[] listaI = pilhaInvertida.mostrar();
-            Console.WriteLine(lista);
-            Console.WriteLine(listaI);
-            return lista;
+
+            Console.WriteLine("Pilha:");
+            for (int i = 0; i < pilha.elementos.Count(); i++)
+            {
+                Console.WriteLine(pilha.elementos[i]);
+            }            
+            Console.WriteLine("Pilha Invertida:");
+            for (int i = 0; i < pilhaInvertida.elementos.Count(); i++)
+            {
+                Console.WriteLine(pilhaInvertida.elementos[i]);
+            }
+
+            return pilhaInvertida.elementos;
         }
 
         public void transferir(PilhaControlador de, PilhaControlador para)

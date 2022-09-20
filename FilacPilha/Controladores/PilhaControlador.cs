@@ -10,38 +10,23 @@ namespace filaCircular.Controladores
     public class PilhaControlador : IPilhaServico
     {
 
-        private int?[] elementos;
+        public List<int> elementos;
 
         public PilhaControlador()
         {
-            
+            elementos = new List<int>();
         }
-        public void empilha(int? elemento)
+        public void empilha(int elemento)
         {
-            /*if (elementos == null)
-            {
-                elementos = new int?[] { };
-            }*/
-
-            elementos = new int?[] { null };
-            if (elementos[0] == null)
-            {
-                elementos[0] = elemento;
-            }
-            else
-            {
-                elementos[elementos.Count()-1] = elemento;
-            }
-
-            //elementos.Append(Convert.ToInt32(elemento));
+            elementos.Add(elemento);
         }
-        public int? desempilha()
+        public int desempilha()
         {
-            int? inicial = null;
+            int inicial = 0;
             if (elementos.Count() > 0)
             {
-                Console.WriteLine(elementos[elementos.Count() - 1]);
-                elementos[elementos.Count() - 1] = 0;
+                inicial = elementos[elementos.Count() - 1];
+                elementos.RemoveAt(elementos.Count() - 1);
             }
             else
             {
@@ -71,11 +56,13 @@ namespace filaCircular.Controladores
                 return true;
             }*/
         }
-        public int?[] mostrar()
+        public List<int> mostrar()
         {
-            int?[] t = elementos;
+            List<int>  t = elementos;
             Console.WriteLine(t);
             return t;
         }
+
+    
     }
 }

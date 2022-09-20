@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilaCircular", "filaCircula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilacPilha", "FilacPilha\FilacPilha.csproj", "{4D64DF74-D562-488C-8A49-63DCF0DFC2CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilha", "PilhacFila\Pilha.csproj", "{9B114D9C-7AFA-457D-8954-531A12182D24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4D64DF74-D562-488C-8A49-63DCF0DFC2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D64DF74-D562-488C-8A49-63DCF0DFC2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D64DF74-D562-488C-8A49-63DCF0DFC2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B114D9C-7AFA-457D-8954-531A12182D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B114D9C-7AFA-457D-8954-531A12182D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B114D9C-7AFA-457D-8954-531A12182D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B114D9C-7AFA-457D-8954-531A12182D24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

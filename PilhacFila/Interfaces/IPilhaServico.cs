@@ -8,9 +8,13 @@ namespace filaCircular.Interfaces
 {
     public interface IPilhaServico
     {
-        void empilha(int elemento);
-        int desempilha();
-        bool vazio();
-        List<int> mostrar();
-    }
+		int tamanho();
+
+		Object ultimoLista();
+
+		bool isEmpty();
+		Object desempilhar();
+		void adicionar(Object elemento);
+
+	}
 }
